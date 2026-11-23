@@ -1,0 +1,23 @@
+// src/mock-data/notification-templates.js
+// Mẫu thông báo (email + sms + push + zalo oa).
+
+export const NOTIFICATION_TEMPLATE_IDS = {
+  OC:'nt-order-created', OP:'nt-order-paid', OS:'nt-order-shipping', OD:'nt-order-delivered',
+  OCX:'nt-order-canceled', PWD:'nt-password-reset', WELC:'nt-welcome', PROMO:'nt-promo',
+  TIER_UP:'nt-tier-up', BIRTH:'nt-birthday', REVIEW:'nt-review-request', LOW_STOCK:'nt-low-stock-admin',
+};
+
+export const mockNotificationTemplates = [
+  { _id: NOTIFICATION_TEMPLATE_IDS.OC,       id: NOTIFICATION_TEMPLATE_IDS.OC,       code: 'order_created',    name: 'Đơn hàng mới',         channel: ['email','sms'],       subject: 'PNJ · Đã nhận đơn {{order_no}}',    body: 'Cảm ơn {{name}} đã đặt đơn {{order_no}} trị giá {{total}}.',   vars: ['order_no','name','total'],       status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.OP,       id: NOTIFICATION_TEMPLATE_IDS.OP,       code: 'order_paid',       name: 'Đã thanh toán',        channel: ['email','push'],       subject: 'PNJ · Thanh toán thành công {{order_no}}', body: '{{name}}, chúng tôi đã nhận thanh toán {{total}} cho đơn {{order_no}}.', vars: ['order_no','name','total'], status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.OS,       id: NOTIFICATION_TEMPLATE_IDS.OS,       code: 'order_shipping',   name: 'Đang giao hàng',       channel: ['sms','zalo','push'], subject: '',                                   body: 'Đơn {{order_no}} đang giao, mã vận đơn {{tracking_no}}.',      vars: ['order_no','tracking_no'],        status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.OD,       id: NOTIFICATION_TEMPLATE_IDS.OD,       code: 'order_delivered',  name: 'Đã giao thành công',   channel: ['email','sms','push'],subject: 'PNJ · Đã giao đơn {{order_no}}',    body: '{{name}}, đơn {{order_no}} đã giao. Xin phản hồi để nhận quà!', vars: ['order_no','name'],               status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.OCX,      id: NOTIFICATION_TEMPLATE_IDS.OCX,      code: 'order_canceled',   name: 'Đơn bị huỷ',           channel: ['email','sms'],       subject: 'PNJ · Đơn {{order_no}} đã huỷ',     body: 'Đơn {{order_no}} đã được huỷ. Tiền sẽ hoàn trong 3-5 ngày.',    vars: ['order_no'],                      status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.PWD,      id: NOTIFICATION_TEMPLATE_IDS.PWD,      code: 'password_reset',   name: 'Đặt lại mật khẩu',     channel: ['email'],              subject: 'PNJ · Đặt lại mật khẩu',             body: 'Nhấn link: {{reset_link}} (hiệu lực 30 phút).',                  vars: ['reset_link'],                     status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.WELC,     id: NOTIFICATION_TEMPLATE_IDS.WELC,     code: 'welcome',          name: 'Chào mừng',            channel: ['email'],              subject: 'Chào mừng {{name}} đến với PNJ',      body: 'Tặng mã giảm 50K cho đơn đầu tiên: NEWBIE50',                  vars: ['name'],                           status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.PROMO,    id: NOTIFICATION_TEMPLATE_IDS.PROMO,    code: 'promo_blast',      name: 'Khuyến mãi mass',      channel: ['email','push','zalo'], subject: '{{title}}',                          body: '{{content}}',                                                   vars: ['title','content'],                status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.TIER_UP, id: NOTIFICATION_TEMPLATE_IDS.TIER_UP,  code: 'tier_up',          name: 'Thăng hạng thẻ',       channel: ['email','push'],       subject: 'Chúc mừng! Bạn vừa thăng hạng {{tier}}', body: 'Xem các đặc quyền mới dành riêng cho bạn.',                     vars: ['tier'],                            status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.BIRTH,    id: NOTIFICATION_TEMPLATE_IDS.BIRTH,    code: 'birthday',         name: 'Chúc mừng sinh nhật',  channel: ['email','sms'],        subject: 'Chúc mừng sinh nhật {{name}}',       body: 'PNJ tặng bạn voucher 200K dịp sinh nhật.',                       vars: ['name'],                            status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.REVIEW,   id: NOTIFICATION_TEMPLATE_IDS.REVIEW,   code: 'review_request',   name: 'Xin đánh giá',         channel: ['email','push'],       subject: 'Hãy chia sẻ trải nghiệm',             body: 'Đánh giá sản phẩm {{product}} để nhận voucher 50K.',            vars: ['product'],                         status: 'active' },
+  { _id: NOTIFICATION_TEMPLATE_IDS.LOW_STOCK,id: NOTIFICATION_TEMPLATE_IDS.LOW_STOCK,code: 'low_stock_admin',  name: 'Cảnh báo tồn thấp',   channel: ['email','push'],       subject: '⚠ Tồn kho thấp · {{sku}}',             body: 'SKU {{sku}} tại {{store}} còn {{qty}} — cân nhắc nhập thêm.',   vars: ['sku','store','qty'],               status: 'active' },
+];

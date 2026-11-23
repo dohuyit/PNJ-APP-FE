@@ -1,0 +1,37 @@
+name: pnj
+
+services:
+  pnj-fe:
+    container_name: pnj-fe
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    env_file:
+      - ../.env
+    environment:
+      # Windows bind-mount không bắn FS event → bật polling để hot-reload chạy
+      CHOKIDAR_USEPOLLING: "true"
+      WATCHPACK_POLLING: "true"
+    volumes:
+      - ../src:/app/src
+      - ../public:/app/public
+      - ../next.config.mjs:/app/next.config.mjs
+      - ../jsconfig.json:/app/jsconfig.json
+      # Giữ node_modules của image, không bị bind-mount che mất
+      - pnj_node_modules:/app/node_modules
+      # Cache .next giữa các lần up → startup nhanh hơn nhiều
+      - pnj_next_cache:/app/.next
+    ports:
+      - "5002:5002"
+    restart: unless-stopped
+    networks:
+      - pnj_network
+
+volumes:
+  pnj_node_modules:
+  pnj_next_cache:
+
+networks:
+  pnj_network:
+    external: true
+    name: pnj_network

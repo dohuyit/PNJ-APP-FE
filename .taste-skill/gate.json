@@ -1,0 +1,164 @@
+{
+ "history": [
+  {
+   "at": "2026-11-15T14:29:28.385Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:31:49.467Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:34:50.222Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:37:20.389Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:41:04.034Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:42:03.591Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:44:55.847Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:46:51.028Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:48:03.194Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:49:58.059Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:55:48.227Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:57:05.549Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:57:54.815Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:58:20.307Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T14:59:25.260Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T15:01:43.032Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T15:03:54.508Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T15:06:28.883Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T15:10:36.528Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-15T15:12:09.327Z",
+   "mode": "hook",
+   "host": "claude",
+   "decision": "allow",
+   "reason": "no build is active here",
+   "stopHookActive": false
+  }
+ ]
+}

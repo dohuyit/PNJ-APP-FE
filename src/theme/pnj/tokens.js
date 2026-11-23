@@ -1,0 +1,27 @@
+// src/theme/pnj/tokens.js — brand tokens derived from pnj-style.md §10
+export const pnjTokens = {
+  container: 1152,
+  radius: { sm: 6, md: 8 },
+  height: { btn: 40, chip: 32, topbar: 56, sidebar: 240, sidebarMini: 64, row: 48 },
+  color: {
+    primary: '#003468',
+    primaryDark: '#143765',
+    secondary: '#202E65',
+    cta: '#AD2A36',
+    gold: '#C48C46',
+    sale: '#DC2626',
+    link: '#1D4ED8',
+    text: '#5A5A5A',
+    textStrong: '#282828',
+    textHeadingAlt: '#212B36',
+    textMuted: '#4D4D4D',
+    textDisabled: '#9B9B9B',
+    bg: '#FFFFFF',
+    bgSoft: '#EEEFF3',
+    bgBlueSoft: '#ECF3FB',
+    bgGray: '#F2F2F2',
+    bgGray2: '#F5F6F8',
+    overlay: 'rgba(0,0,0,.35)',
+    cardBorder: '#E5E7EB',
+  },
+};
